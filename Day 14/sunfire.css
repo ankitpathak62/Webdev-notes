@@ -1,0 +1,37 @@
+p {
+    color: rgb(0, 0, 0);
+    background-color: bisque;
+}
+
+article {
+    color: greenyellow;
+}
+
+section {
+    color: cadetblue;
+}
+
+#h2 {
+    color: red
+}
+
+#ankit {
+    background-color: greenyellow;
+}
+
+.abc {
+    color: mediumturquoise;
+}
+
+/*p {
+    color: rgb(0, 0, 0);
+    background-color: bisque;
+}*/
+
+article,section{
+    color: blue;
+}
+p.abc{
+    color: red;
+}
+

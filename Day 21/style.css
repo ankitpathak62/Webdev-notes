@@ -1,0 +1,44 @@
+.container{
+    background-color: bisque;
+    border: 2px solid red;
+    margin: 5px;
+    padding: 5px;
+    height: 600px;
+    /* width: 100%; */
+    display: flex;
+    /* flex-direction: row-reverse; */
+    /* flex-wrap: none; */
+    /* justify-content:end; */
+    /* align-items: end; */
+
+
+    
+}
+
+.box{
+    height: 150px;
+    width: 150px;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid black;
+    /* display: flex; */
+}
+
+#abc{
+    background-color: blue;
+    order: 10;
+    /* flex-basis: 300px; */
+    align-self: start;
+}
+#def{
+    
+    flex-shrink: 5;
+    background-color: orange;
+}
+#ghi{
+    background-color: purple;
+}
+#jkl{
+    background-color: yellow;
+    order: -1;
+}

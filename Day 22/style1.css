@@ -1,0 +1,31 @@
+.container{
+    background-color: bisque;
+    border: 2px solid red;
+    margin: 5px;
+    padding: 5px;
+    height: 600px;
+    width: 100%;
+    /* display: flex; */
+     
+
+    
+}
+
+.box{
+    
+    margin: 5px;
+    padding: 5px;
+     
+}
+
+@media (min-width:600px) {
+    .container{
+        display: flex;
+        justify-content: end;
+        color: aliceblue;
+    }
+    
+}
+
+
+ 

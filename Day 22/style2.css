@@ -1,0 +1,21 @@
+.container{
+    border: 5px solid black;
+    padding: 10px;
+    display: flex;
+}
+/* 
+#left{
+    width: 45%;
+
+}
+#right{
+    width: 45%;
+} */
+
+
+@media (max-width:600px) {
+    .container{
+        display: block;
+    }
+    
+}

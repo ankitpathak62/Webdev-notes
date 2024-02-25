@@ -1,0 +1,25 @@
+.container {
+    height: 300px;
+    width: 300px;
+    border: 2px solid black;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 100px;
+    transition: all 1s ;
+}
+
+.container:hover{
+    /* transform: scale(0.5); */
+    /* transform: rotate(360deg); */
+    /* transform: rotate(-40deg); */
+    /* transform: skew(-45deg ); */
+    transform: translate(120px, 50%);
+}
+
+p {
+    font-size: 40px;
+}
+

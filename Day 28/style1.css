@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100wh;
+}
+
+.container {
+    margin: 10px;
+    height: 600px;
+    padding: 10px;
+    border: 2px solid red;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+    justify-content: center;
+    grid-template-areas: 
+    "h1 h1 h1 h1 h1 h1 h1 h1"
+    "n n m m m m sb sb"
+    "n n m m m m sb sb"
+    "n n m m m m sb sb"
+    "n n m m m m sb sb"
+    "ft ft ft ft ft ft ft ft"
+    ;
+}
+
+
+.box {
+    border: 1px solid black;
+    background-color: rgb(134, 51, 0);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#box1 {
+    grid-area: h1;
+}
+
+#box2 {
+    grid-area: sb;
+}
+
+#box3 {
+    grid-area: n;
+}
+
+#box4 {
+    grid-area: m;
+}
+
+ 
+
+#box6 {
+    grid-area: ft;
+}

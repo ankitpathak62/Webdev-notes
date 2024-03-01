@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 750px;
+    width: 1280px;
+    background-color: bisque;
+    border: 3px solid black;
+
+}
+
+.box {
+    height: 100px;
+    width: 200px;
+    border: 5px dotted red;
+    background-color: brown;
+    border-radius: 20%;
+    animation-name: box1;
+    position: relative;
+    /* animation-delay: 1s; */
+    /* animation-duration: 2s; */
+    /* animation-direction: alternate; */
+    /* animation-iteration-count: infinite; */
+    /* animation-timing-function: ease-in-out; */
+    /* animation-fill-mode: backwards; */
+    animation: 3s ease 1s infinite alternate both box1;
+
+}
+
+@keyframes box1 {
+    from {
+        top: 0;
+        left: 0;
+    }
+
+    to {
+        top: 0;
+        left: 1100px;
+    }
+}
+
+#box2 {
+    height: 100px;
+    width: 200px;
+    border: 5px dotted red;
+    background-color: brown;
+    border-radius: 20%;
+    animation-name: box2;
+    position: relative;
+    animation: 3s ease 1s infinite alternate both box2;
+}
+
+@keyframes box2 {
+    from {
+        top: 500px;
+        left: 1100px;
+    }
+
+    to {
+        top: 500px;
+        left: 0px;
+    }
+}
+
+.circle {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border: 3px solid black;
+    border-radius: 50%;
+    margin: 20px;
+    position: relative;
+    top: 35%;
+    left: 35%;
+    animation-name: circle;
+    animation: 3s ease-in-out 1s infinite alternate none running circle;
+}
+
+
+@keyframes circle {
+    0% {
+        background-color: red;
+        left: 5%;
+        top: 1px;
+    }
+
+    25% {
+        background-color: yellow;
+        left: 90%;
+        top: 5%;
+    }
+
+    50% {
+        background-color: blue;
+        left: 70%;
+        top:50%;
+    }
+
+    75% {
+        background-color: green;
+        left: 10%;
+        top: 70%;
+    }
+
+    100% {
+        background-color: red;
+        left: 90%;
+        top: 75%;
+    }
+}

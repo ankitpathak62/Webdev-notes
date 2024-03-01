@@ -1,0 +1,19 @@
+.container{
+    height: 400px;
+    width: 600px;
+    border: 2px solid black;
+
+    margin: 5px;
+    padding: 10px;
+}
+
+@media (min-width: 500px) {
+     .container{
+        background-color: hotpink;
+     }
+  }
+  @media (min-width: 300px) and (max-width: 600px){
+    .container{
+        color: blue;
+    }
+  }

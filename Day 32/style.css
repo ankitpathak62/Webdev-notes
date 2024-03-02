@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 300px;
+    width: 300px;
+    border: 2px solid black;
+    background-color: rgb(229, 157, 63);
+    /* margin: 200px; */
+    position: relative;
+    top: 200px;
+    left: 200px;
+    transform-style: preserve-3d;
+    transform:perspective(600px) rotateY(45deg);
+}
+
+.box {
+    height: 300px;
+    width: 300px;
+    border: 2px solid black;
+    background-color: rgb(59, 34, 200);
+
+    position: absolute;
+    transition: 2s;
+}
+
+.box:hover {
+    transform:perspective(600px) rotateX(180deg);
+}

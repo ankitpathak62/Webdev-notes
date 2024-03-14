@@ -29,10 +29,41 @@
 // // console.log(studentSubscribeUs);
 // console.log(typeof studentSubscribeUs);
 
-const student = {
-    name:"ankit"
-    reg_number : 2365
-    subscribe : true
+// const person = {
+//   firstName: "John",
+//   lastName: "Doe",
+//   age: 50,
+//   eyeColor: "blue",
+// };
 
-}
-consol
+// person['age']=55
+
+// const person1 ="abc"
+// person1 = "jshdjsh"
+
+// console.log(person1)
+
+// console.log(person)
+
+
+
+// console.log(2+6)
+// console.log(2-6)
+// console.log(2*6)
+// console.log(2/6)
+
+// console.log(6%5);
+
+// console.log(5**3);
+
+
+// let a=3
+
+// a**=5
+ 
+// console.log(a)
+
+let a=10
+let b= 10 //string -> number 
+
+console.log(a <= b)

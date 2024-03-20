@@ -30,8 +30,11 @@
 
 
 let str = "lorem Ipsum is simply dummy text "
-let str1 = str.toUpperCase()
-console.log(str1);   
+str.toUpperCase()
+console.log(str);   
+
+
+
 
 
 

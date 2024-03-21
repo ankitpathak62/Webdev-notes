@@ -162,19 +162,29 @@
 // console.log(pName);
 
 
-// {
-//     userName : "Ankit"
-    
-// }
 
-// [
-//     {
 
-//     },
-//     {
 
-//     },
-//     {
 
-//     }
-// ]
+
+
+
+
+
+
+const mySymbol = Symbol("Symbol1")
+const Abc = {
+    id:123,
+    [mySymbol] : "mykey1"
+}
+console.log(Abc[mySymbol]);
+
+
+
+
+
+
+
+
+
+

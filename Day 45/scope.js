@@ -4,10 +4,14 @@ if (true) {
   var a = 5;
   let b = 9;
   const c = 15;
-  console.log(b);
+  // console.log(b);
 } 
 //  var a = 45
 
  
 // console.log(a);
 // console.log(b);
+
+
+
+console.log((5+true)*false);

@@ -110,7 +110,7 @@ class engineer extends employe {
     work(){
         console.log("Make new projects");
          
-    }
+    } 
     sleep(){
         console.log("no sleep");
     }

@@ -1,20 +1,8 @@
 /***************** Item Page CSS **************************/
-/*.action_container {
-    text-decoration: none;
-}
-a.action_container:link {
-    color:black;
-}
-.item-details {
-    cursor: pointer;
-    width: 250px;
-    margin: 10px;
-}
-.stars {
-    font-size: 12px;
-    font-weight: 700;
-    text-align: left;
-}
+/* 
+ 
+ 
+ 
 .company {
     font-size: 18px;
     font-weight: 700;
@@ -38,27 +26,7 @@ a.action_container:link {
     font-weight: 400;
     display: block;
 }
-.price-container {
-    margin-top: 10px;
-}
-.current-price {
-    font-size: 14px;
-    font-weight: 700;
-    color: #282c3f;
-}
-.original-price {
-    text-decoration: line-through;
-    color: #7e818c;
-    font-weight: 400;
-    margin-left: 5px;
-    font-size: 12px;
-}
-.discount-percentage {
-    color: #ff905a;
-    font-weight: 400;
-    font-size: 12px;
-    margin-left: 5px;
-}
+ 
 .btn-bag {
     background-color: lightgreen;
     border: none;

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Empty from "./components/Empty";
 import Shopitem from "./components/item";
 import "./App.css";
@@ -6,6 +6,7 @@ import Head from "./components/Head";
 import Container from "./components/Container";
 import GetData from "./components/getData";
 import Inputtext from "./components/Inputtext";
+import { useState } from "react";
 let Items = [
   "Oil",
   "Icecream",
@@ -16,24 +17,23 @@ let Items = [
   "Toy",
   "Notebook",
 ];
-let textshow = "Item Entered byy user"
-
 
 
 function App() {
 
-  
-  // let textState = useState("Item Entered byy user")
-  // let textshow = textState[0]
-  // let settextstate = textState[1]
-  // console.log(textshow )
+ let textState = useState("Item Entered by user")
+  let textshow = textState[0]
+  let settextstate = textState[1]
+  console.log(textshow )
 
+
+  
 
   const handleOnChange = (event) => {
-    console.log(event.target.value)
-    textshow(event.target.value)
+    settextstate(event.target.value)
+    // console.log(event.target.value)
   }
-   return (
+    return (
     <>
        
       <Container>
@@ -45,7 +45,7 @@ function App() {
           <Inputtext handleOnChange = {handleOnChange}></Inputtext>
           <p>{textshow}</p>
           <Shopitem item={Items}></Shopitem>
-          <GetData data={alertt}></GetData>
+          
         </center>
       </Container>
       

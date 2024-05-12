@@ -1,23 +1,18 @@
 import React from "react";
- import styles from "./itemlite.module.css"
-function Itemlite( {Shopitem}) {
-   
-const BuyBtn =(event) => {
-  console.log(event)
-  console.log( `${Shopitem} buy`)
-}
-
+import styles from "./itemlite.module.css";
+const Itemlite = ({ Shopitem, handleBuyBtn }) => {
   return (
     <>
-    <div className={styles.divv}>
-      <li   class=" abc list-group-item">
-        {Shopitem}
-        <button  onClick= {(event) => BuyBtn(event)} className={styles.btn}  >
-          Buy</button>
-      </li>
-      
+      <div className={styles.divv}>
+        <li class="   list-group-item">
+          {Shopitem}
+          <button onClick={handleBuyBtn} className={styles.btn}>
+            Buy
+          </button>
+        </li>
       </div>
     </>
   );
-}
-export default Itemlite;
+};
+
+export default itemlite;

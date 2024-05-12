@@ -5,6 +5,7 @@ import "./App.css";
 import Head from "./components/Head";
 import Container from "./components/Container";
 import GetData from "./components/getData";
+import Inputtext from "./components/Inputtext";
 let Items = [
   "Oil",
   "Icecream",
@@ -22,6 +23,10 @@ function App() {
     alert("ready to buy")
   }
 
+  const handleOnChange = (event) => {
+    console.log(event.target.value)
+    textshow(event.target.value)
+  }
    return (
     <>
        
@@ -30,11 +35,8 @@ function App() {
           <Head></Head>
 
           <Empty item={Items}></Empty>
-          <input
-          onChange={(event) => console.log(event.target.value)}
-           type="text" placeholder="Search items"
-          ></input>
-
+          
+          <Inputtext handleOnChange = {handleOnChange}></Inputtext>
           <p>{textshow}</p>
           <Shopitem item={Items}></Shopitem>
           <GetData data={alertt}></GetData>

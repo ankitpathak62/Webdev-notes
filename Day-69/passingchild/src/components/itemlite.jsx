@@ -6,7 +6,7 @@ const Itemlite = ({ Shopitem, handleBuyBtn }) => {
       <div className={styles.divv}>
         <li class="   list-group-item">
           {Shopitem}
-          <button onClick={handleBuyBtn} className={styles.btn}>
+          <button onClick={handleBuyBtn} className={`${styles.btn} `}>
             Buy
           </button>
         </li>
@@ -15,4 +15,4 @@ const Itemlite = ({ Shopitem, handleBuyBtn }) => {
   );
 };
 
-export default itemlite;
+export default Itemlite;

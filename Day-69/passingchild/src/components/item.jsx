@@ -9,6 +9,7 @@ function Shopitem({ item }) {
           <Itemlite key={item} Shopitem={item}></Itemlite>
         ))}
       </ul>
+       
     </>
   );
 }

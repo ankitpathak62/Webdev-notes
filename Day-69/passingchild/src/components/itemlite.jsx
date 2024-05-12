@@ -2,8 +2,9 @@ import React from "react";
  import styles from "./itemlite.module.css"
 function Itemlite( {Shopitem}) {
    
-const BuyBtn =() => {
-  
+const BuyBtn =(event) => {
+  console.log(event)
+  console.log( `${Shopitem} buy`)
 }
 
   return (
@@ -11,7 +12,8 @@ const BuyBtn =() => {
     <div className={styles.divv}>
       <li   class=" abc list-group-item">
         {Shopitem}
-        <button  onClick= {() => console.log( `${Shopitem} buy`)} className={styles.btn}  >Buy</button>
+        <button  onClick= {(event) => BuyBtn(event)} className={styles.btn}  >
+          Buy</button>
       </li>
       
       </div>

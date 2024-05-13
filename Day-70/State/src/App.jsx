@@ -7,48 +7,38 @@ import Container from "./components/Container";
 import GetData from "./components/getData";
 import Inputtext from "./components/Inputtext";
 import { useState } from "react";
-let Items = [
-  "Oil",
-  "Icecream",
-  "Charger",
-  "Cloths",
-  "Lights",
-  "Books",
-  "Toy",
-  "Notebook",
-];
-
-
+ 
 function App() {
+  let [textshow, settextstate] = useState("User last enter");
 
- let textState = useState("Item Entered by user")
-  let textshow = textState[0]
-  let settextstate = textState[1]
-  console.log(textshow )
+ 
 
 
-  
+  let [Items, setnewItem] = useState(["chai" ]);
 
-  const handleOnChange = (event) => {
-    settextstate(event.target.value)
-    // console.log(event.target.value)
-  }
-    return (
+  const onKeyDown = (event) => {
+    if (event.key === "Enter") {
+      let newItem = event.target.value;
+      let newShopItem = [...Items,newItem]
+      console.log("new item is " + newItem);
+      setnewItem(newShopItem)
+      settextstate(event.target.value)
+      
+    }
+  };
+  return (
     <>
-       
       <Container>
         <center>
           <Head></Head>
 
           <Empty item={Items}></Empty>
-          
-          <Inputtext handleOnChange = {handleOnChange}></Inputtext>
-          <p>{textshow}</p>
+
+          <Inputtext  handleKeyDown={onKeyDown}></Inputtext>
+          <p>{"User last enter is " + textshow}</p>
           <Shopitem item={Items}></Shopitem>
-          
         </center>
       </Container>
-      
     </>
   );
 }

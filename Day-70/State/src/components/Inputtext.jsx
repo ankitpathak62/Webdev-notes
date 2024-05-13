@@ -1,16 +1,14 @@
-import React from "react";
+import styles from "./Inputtext.module.css";
 
-// const handleOnChange =  => {
-//   // ;
-//   // settextstate(event.target.value)
-// };
-const Inputtext = () => {
-  
+
+const Inputtext = ({ handleKeyDown }) => {
   return (
-    <>
-     
-      <input type="text" placeholder="Search items" onChange={(event) =>console.log(event.target.value) } />
-    </>
+    <input
+      type="text"
+      placeholder="Enter Food Item here"
+      className={styles.Input}
+      onKeyDown={handleKeyDown}
+    />
   );
 };
 

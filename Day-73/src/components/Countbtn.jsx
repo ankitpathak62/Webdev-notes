@@ -11,7 +11,7 @@ function Countbtn() {
       <button onClick={()=> CountContext.setCount(CountContext.count +1)} >
         <MdAdd />
       </button>
-      <button onClick={()=> CountContext.setCount(CountContext.count +1)} >
+      <button onClick={()=> CountContext.setCount(CountContext.count - 1)} >
         <FaMinus />
       </button>
     </>

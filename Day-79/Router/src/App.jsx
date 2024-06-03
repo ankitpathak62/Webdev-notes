@@ -3,9 +3,16 @@ import Navbar from "./components/Navbar";
 import Project from "./components/Project"; // Corrected the import statement
 import Experience from "./components/Experience";
 import Hero from "./components/Hero";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link,
+  useNavigate,
+} from "react-router-dom";
 
 const App = () => {
+  
   return (
     <>
       <div>
@@ -19,6 +26,7 @@ const App = () => {
             className="m-8 flex items-center justify-center gap-4 text-2xl
          "
           >
+            <button onClick={bttn}>Abc</button>
             <Link to="Experience">Experience</Link>
             <Link to="Project">Project</Link>
           </div>

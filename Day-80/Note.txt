@@ -1,0 +1,10 @@
+{
+    type = 'String value'
+}
+
+(PreviousState , Action) =>newState
+
+
+getState() -- access to state hold
+dispatch(action) -- allow to update
+subscribe(listener) --register listener

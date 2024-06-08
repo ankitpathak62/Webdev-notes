@@ -1,7 +1,7 @@
 import { Buy_CPU } from "./Cputype";
 
 const initialState = {
-  NumberofCpu: 20,
+  NumberofCpu: 200,
 };
 
 const CpuReducer = (state = initialState, action) => {
@@ -9,10 +9,11 @@ const CpuReducer = (state = initialState, action) => {
     case Buy_CPU:
       return {
         ...state,
-        NumberofCpu: initialState - 1,
+        NumberofCpu: state.NumberofCpu - 1, // Decrement the NumberofCpu by 1
       };
     default:
       return state;
   }
 };
-export default CpuReducer;
+
+export { CpuReducer };

@@ -1,6 +1,6 @@
-import { createStoreHook } from "react-redux";
-import { CpuReducer } from "./CpuReducer";
+import { createStore } from "redux";
+import {CpuReducer} from "./CpuReducer"
 
-const Store = createStoreHook(CpuReducer);
+const store = createStore(CpuReducer);
 
-export default Store;
+export default store;

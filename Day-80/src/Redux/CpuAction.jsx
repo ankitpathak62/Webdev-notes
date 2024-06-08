@@ -5,3 +5,4 @@ function Buy_Cpu() {
     type: Buy_CPU,
   };
 }
+export {Buy_Cpu}

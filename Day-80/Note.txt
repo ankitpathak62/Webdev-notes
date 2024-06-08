@@ -8,3 +8,7 @@
 getState() -- access to state hold
 dispatch(action) -- allow to update
 subscribe(listener) --register listener
+
+
+useSelector hook -- const abc  = useSelector(selector : function)
+useDispatch hook --const abc = useDispatch()

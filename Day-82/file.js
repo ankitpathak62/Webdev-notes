@@ -1,4 +1,8 @@
 const fs = require("fs");
+const os = require("os");
+
+console.log(os.cpus().length);
+
 
 
 //to create file
@@ -9,10 +13,13 @@ const fs = require("fs");
 
 //to read file
 
+
 // const result = fs.readFileSync("./text.txt","utf-8")
 // console.log(result);
 
-// fs.readFile("./package.json", "utf-8", (err, result) => {
+
+
+// fs.readFile("./text.txt", "utf-8", (err, result) => {
 //     if (err) {
 //         console.log("Error:", err);
 //     } else {
@@ -20,7 +27,7 @@ const fs = require("fs");
 //     }
 // });
 
-
+// console.log("Ankit");
 //add somelines
 // fs.appendFileSync("./text.txt",`  Hey Buddy \n`)
 

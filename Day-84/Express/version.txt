@@ -1,0 +1,18 @@
+^4.19.2
+^4.19.3
+^4.21.3
+^4.0.0
+^4.99.99
+~4.19.
+
+//part 1 - ^
+//Part 2 - 4 
+//Part 3 - 19
+//Part 4 - 2
+
+
+
+//Part 4 = Minor fix (optioal update)
+
+//Part 3 = Security fix (Recommended Bug fix)
+//Part 2 = Major Release (Breaking Update)

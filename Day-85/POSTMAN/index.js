@@ -6,7 +6,7 @@ const app = express();
 
 const PORT = 3300;
 
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: false })); 
 
 app.get("/users", (req, res) => {
   const html = `

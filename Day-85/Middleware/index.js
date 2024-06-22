@@ -6,7 +6,8 @@ const app = express();
 
 const PORT = 3300;
 
-// app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json({ extended: false }));
 
 app.use((req, res, next) => {
   console.log("Middleware 1 is runnning");
@@ -22,6 +23,8 @@ app.use((req, res, next) => {
 
 //ROUTES
 app.get("/api/users", (req, res) => {
+  res.setHeader("X-myAccount","987654")
+  console.log(req.headers);
   return res.json(users);
 });
 

@@ -1,0 +1,6 @@
+Architechture of mongodb
+
+Collection ----(Users,Post,Address)
+    Documents1
+    Documents2
+    Documents3

@@ -1,0 +1,3 @@
+schema --- define structure
+    schema --make model
+    model --Crud operations

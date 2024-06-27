@@ -1,0 +1,74 @@
+{
+  "name": "kerberos",
+  "version": "2.1.0",
+  "description": "Kerberos library for Node.js",
+  "main": "lib/index.js",
+  "files": [
+    "lib",
+    "src",
+    "binding.gyp",
+    "HISTORY.md",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mongodb-js/kerberos.git"
+  },
+  "keywords": [
+    "kerberos",
+    "security",
+    "authentication"
+  ],
+  "author": {
+    "name": "The MongoDB NodeJS Team",
+    "email": "dbx-node@mongodb.com"
+  },
+  "bugs": {
+    "url": "https://jira.mongodb.org/projects/NODE/issues/"
+  },
+  "dependencies": {
+    "bindings": "^1.5.0",
+    "node-addon-api": "^6.1.0",
+    "prebuild-install": "7.1.1"
+  },
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "chai-string": "^1.5.0",
+    "chalk": "^4.1.2",
+    "clang-format": "^1.8.0",
+    "dmd-clear": "^0.1.2",
+    "eslint": "^8.46.0",
+    "eslint-config-prettier": "^8.10.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "jsdoc-to-markdown": "^8.0.0",
+    "mocha": "^10.2.0",
+    "mongodb": "^5.7.0",
+    "node-gyp": "^9.4.0",
+    "prebuild": "^11.0.4",
+    "prettier": "^2.8.8",
+    "request": "^2.88.2",
+    "standard-version": "^9.5.0"
+  },
+  "scripts": {
+    "install": "prebuild-install --runtime napi || node-gyp rebuild",
+    "format-cxx": "clang-format -i 'src/**/*'",
+    "format-js": "eslint lib test --fix",
+    "check:lint": "eslint lib test",
+    "precommit": "check-clang-format",
+    "test": "mocha test",
+    "docs": "jsdoc2md --template etc/README.hbs --plugin dmd-clear --files lib/kerberos.js > README.md",
+    "rebuild": "prebuild --runtime napi --compile",
+    "prebuild": "prebuild --runtime napi --strip --verbose --all",
+    "release": "standard-version -i HISTORY.md"
+  },
+  "engines": {
+    "node": ">=12.9.0"
+  },
+  "binary": {
+    "napi_versions": [
+      4
+    ]
+  },
+  "license": "Apache-2.0",
+  "readmeFilename": "README.md"
+}

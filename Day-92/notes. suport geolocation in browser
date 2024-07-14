@@ -1,0 +1,21 @@
+ 1. support geolocation in browser
+
+ 2. high accuracy 
+
+ 3. no cashing
+
+ 4. timeout
+
+ 5. watch position cont.
+
+ 6. map coordinate set(0,0)
+
+ 7.openstreetmap
+
+ 8. zoom level high
+
+ 9.create marker
+
+ 10. if market for id exist upate its positon otherwise create a new marker 
+
+ 11. when user is disconnect reove marker

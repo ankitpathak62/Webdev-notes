@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "name": "Mern Stack",
+    "title": "lorem error nemo asperiores",
+
+    "price": 0,
+    "category": "Free",
+    "image": "https://img.freepik.com/free-vector/creative-abstract-quantum-illustration_23-2149236239.jpg?t=st=1721380512~exp=1721384112~hmac=2d8ea2fc1b6c3fc7bfaf426c553c939dd822823a63c2a40770721541330478dd&w=740"
+  },
+  {
+    "id": 2,
+    "name": "Artificial intelligence",
+    "title": "lorem error nemo asperiores",
+
+    "price": 0,
+    "category": "Free",
+    "image": "https://img.freepik.com/free-vector/creative-abstract-quantum-illustration_23-2149236239.jpg?t=st=1721380512~exp=1721384112~hmac=2d8ea2fc1b6c3fc7bfaf426c553c939dd822823a63c2a40770721541330478dd&w=740"
+  },
+  {
+    "id": 3,
+    "name": "Software engineering",
+    "title": "lorem error nemo asperiores",
+
+    "price": 0,
+    "category": "Free",
+    "image": "https://img.freepik.com/free-vector/creative-abstract-quantum-illustration_23-2149236239.jpg?t=st=1721380512~exp=1721384112~hmac=2d8ea2fc1b6c3fc7bfaf426c553c939dd822823a63c2a40770721541330478dd&w=740"
+  },
+  {
+    "id": 4,
+    "name": "Data structure",
+    "title": "lorem error nemo asperiores",
+
+    "price": 0,
+    "category": "Free",
+    "image": "https://img.freepik.com/free-vector/creative-abstract-quantum-illustration_23-2149236239.jpg?t=st=1721380512~exp=1721384112~hmac=2d8ea2fc1b6c3fc7bfaf426c553c939dd822823a63c2a40770721541330478dd&w=740"
+  },
+  {
+    "id": 5,
+    "name": "Computer architecture",
+    "title": "lorem error nemo asperiores",
+
+    "price": 0,
+    "category": "Free",
+    "image": "https://img.freepik.com/free-vector/creative-abstract-quantum-illustration_23-2149236239.jpg?t=st=1721380512~exp=1721384112~hmac=2d8ea2fc1b6c3fc7bfaf426c553c939dd822823a63c2a40770721541330478dd&w=740"
+  },
+  {
+    "id": 6,
+    "name": "Algorithms",
+    "title": "lorem error nemo asperiores",
+
+    "price": 0,
+    "category": "Free",
+    "image": "https://img.freepik.com/free-vector/creative-abstract-quantum-illustration_23-2149236239.jpg?t=st=1721380512~exp=1721384112~hmac=2d8ea2fc1b6c3fc7bfaf426c553c939dd822823a63c2a40770721541330478dd&w=740"
+  },
+  {
+    "id": 7,
+    "name": " Digital Marketing.",
+    "title": "lorem error nemo asperiores",
+
+    "price": 1990,
+    "category": "Paid",
+    "image": "https://img.freepik.com/free-vector/creative-abstract-quantum-illustration_23-2149236239.jpg?t=st=1721380512~exp=1721384112~hmac=2d8ea2fc1b6c3fc7bfaf426c553c939dd822823a63c2a40770721541330478dd&w=740"
+  },
+  {
+    "id": 8,
+    "name": "Mern Stack",
+    "title": "lorem error nemo asperiores",
+
+    "price": 1990,
+    "category": "Paid",
+    "image": "https://img.freepik.com/free-vector/creative-abstract-quantum-illustration_23-2149236239.jpg?t=st=1721380512~exp=1721384112~hmac=2d8ea2fc1b6c3fc7bfaf426c553c939dd822823a63c2a40770721541330478dd&w=740"
+  },
+  {
+    "id": 9,
+    "name": "Mern Stack",
+    "title": "lorem error nemo asperiores",
+
+    "price": 1990,
+    "category": "Paid",
+    "image": "https://img.freepik.com/free-vector/creative-abstract-quantum-illustration_23-2149236239.jpg?t=st=1721380512~exp=1721384112~hmac=2d8ea2fc1b6c3fc7bfaf426c553c939dd822823a63c2a40770721541330478dd&w=740"
+  },
+  {
+    "id": 10,
+    "name": "Mern Stack",
+    "title": "lorem error nemo asperiores",
+
+    "price": 1450,
+    "category": "Paid",
+    "image": "https://img.freepik.com/free-vector/creative-abstract-quantum-illustration_23-2149236239.jpg?t=st=1721380512~exp=1721384112~hmac=2d8ea2fc1b6c3fc7bfaf426c553c939dd822823a63c2a40770721541330478dd&w=740"
+  },
+  {
+    "id": 11,
+    "name": "Mern Stack",
+    "title": "lorem error nemo asperiores",
+
+    "price": 4550,
+    "category": "Paid",
+    "image": "https://img.freepik.com/free-vector/creative-abstract-quantum-illustration_23-2149236239.jpg?t=st=1721380512~exp=1721384112~hmac=2d8ea2fc1b6c3fc7bfaf426c553c939dd822823a63c2a40770721541330478dd&w=740"
+  },
+  {
+    "id": 12,
+    "name": "Mern Stack",
+    "title": "lorem error nemo asperiores",
+
+    "price": 1350,
+    "category": "Paid",
+    "image": "https://img.freepik.com/free-vector/creative-abstract-quantum-illustration_23-2149236239.jpg?t=st=1721380512~exp=1721384112~hmac=2d8ea2fc1b6c3fc7bfaf426c553c939dd822823a63c2a40770721541330478dd&w=740"
+  },
+  {
+    "id": 13,
+    "name": "Mern Stack",
+    "title": "lorem error nemo asperiores",
+
+    "price": 1110,
+    "category": "Paid",
+    "image": "https://img.freepik.com/free-vector/creative-abstract-quantum-illustration_23-2149236239.jpg?t=st=1721380512~exp=1721384112~hmac=2d8ea2fc1b6c3fc7bfaf426c553c939dd822823a63c2a40770721541330478dd&w=740"
+  },
+  {
+    "id": 14,
+    "name": "Mern Stack",
+    "title": "lorem error nemo asperiores",
+
+    "price": 1350,
+    "category": "Paid",
+    "image": "https://img.freepik.com/free-vector/creative-abstract-quantum-illustration_23-2149236239.jpg?t=st=1721380512~exp=1721384112~hmac=2d8ea2fc1b6c3fc7bfaf426c553c939dd822823a63c2a40770721541330478dd&w=740"
+  },
+  {
+    "id": 15,
+    "name": "Mern Stack",
+    "title": "lorem error nemo asperiores",
+
+    "price": 1250,
+    "category": "Paid",
+    "image": "https://img.freepik.com/free-vector/creative-abstract-quantum-illustration_23-2149236239.jpg?t=st=1721380512~exp=1721384112~hmac=2d8ea2fc1b6c3fc7bfaf426c553c939dd822823a63c2a40770721541330478dd&w=740"
+  },
+  {
+    "id": 16,
+    "name": "Mern Stack",
+    "title": "lorem error nemo asperiores",
+
+    "price": 1999,
+    "category": "Paid",
+    "image": "https://img.freepik.com/free-vector/creative-abstract-quantum-illustration_23-2149236239.jpg?t=st=1721380512~exp=1721384112~hmac=2d8ea2fc1b6c3fc7bfaf426c553c939dd822823a63c2a40770721541330478dd&w=740"
+  }
+]

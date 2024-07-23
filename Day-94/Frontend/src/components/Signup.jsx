@@ -11,7 +11,7 @@ const Signup = () => {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = (data) => console.log(data); 
   return (
     <>
       <div className="flex h-screen items-center justify-center">

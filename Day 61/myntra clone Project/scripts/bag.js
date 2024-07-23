@@ -8,7 +8,7 @@ function onLoad() {
   displayBagSummary()
 
 }
-
+ 
 
 function displayBagSummary() {
   let bagSummaryElement = document.querySelector(".bag-summary")

@@ -13,7 +13,7 @@ const items = [
             stars: 4.5,
             count: 1400,
         },
-    },
+    }, 
     {
         id: '002',
         image: 'images/2.jpg',

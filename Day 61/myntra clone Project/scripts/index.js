@@ -7,7 +7,7 @@ function onLoad() {
   displayItemsOnHomePage();
   displayBagIcon();
 }
-
+ 
 function addToBag(itemId) {
   bagItems.push(itemId);
   localStorage.setItem('bagItems', JSON.stringify(bagItems));

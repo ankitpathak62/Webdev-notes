@@ -1,0 +1,28 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ankitpathak62/Webdev-notes.git#37fed9acda18db96fd3daaef11600c124af921e2"
+  },
+  "author": "Ankit Pathak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ankitpathak62/Webdev-notes/issues"
+  },
+  "homepage": "https://github.com/ankitpathak62/Webdev-notes/tree/37fed9acda18db96fd3daaef11600c124af921e2#readme",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.5.1",
+    "nodemon": "^3.1.4"
+  }
+}

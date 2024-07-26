@@ -19,6 +19,7 @@
   "homepage": "https://github.com/ankitpathak62/Webdev-notes/tree/37fed9acda18db96fd3daaef11600c124af921e2#readme",
   "description": "",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",

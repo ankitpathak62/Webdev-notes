@@ -1,7 +1,12 @@
 import React, { useEffect, useState } from "react";
 import Login from "./Login";
+import Logout from "./Logout";
+import { useAuth } from "../Context/AuthProvider";
 
 const Navbar = () => {
+  const [authUser, setAuthUser] = useAuth();
+  console.log(authUser);
+
   const [theme, setTheme] = useState(
     localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
   );
@@ -122,7 +127,6 @@ const Navbar = () => {
                 onClick={() => {
                   setTheme(theme === "dark" ? "light" : "dark");
                 }}
-             
               >
                 <circle cx="12" cy="12" r="5" />
                 <path d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4" />
@@ -138,7 +142,6 @@ const Navbar = () => {
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-             
                 onClick={() => {
                   setTheme(theme === "light" ? "dark" : "light");
                 }}
@@ -147,12 +150,22 @@ const Navbar = () => {
               </svg>
             </label>
           </div>
-          <div>
-            <a className="bg-black text-white p-2 cursor-pointer rounded-md hover:bg-slate-800 duration-300" onClick={() => document.getElementById("my_modal_3").showModal()}>
-              Login
-            </a>
-            <Login/>
-          </div>
+
+          {authUser ? (
+            <Logout></Logout>
+          ) : (
+            <div>
+              <a
+                className="bg-black text-white p-2 cursor-pointer rounded-md hover:bg-slate-800 duration-300"
+                onClick={() =>
+                  document.getElementById("my_modal_3").showModal()
+                }
+              >
+                Login
+              </a>
+              <Login />
+            </div>
+          )}
         </div>
       </div>
     </div>

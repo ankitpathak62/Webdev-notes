@@ -9,7 +9,7 @@ function Left() {
 
       <Search></Search>
       <hr></hr>
-      <Users></Users>
+      <Users></Users>  
     </div>
   );
 }

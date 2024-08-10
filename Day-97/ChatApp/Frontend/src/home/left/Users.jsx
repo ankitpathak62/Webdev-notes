@@ -3,7 +3,7 @@ import User from "./User";
 
 function Users() {
   return (
-    <div className="overflow-y-auto" style={{maxHeight:"calc(92vh)"}} >
+    <div className="flex-ankit overflow-y-auto" style={{maxHeight:"calc(84vh - 1vh)"}} >
       <User></User>
       <User></User>
       <User></User>

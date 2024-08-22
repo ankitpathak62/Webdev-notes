@@ -6,7 +6,7 @@ import Cookies from "js-cookie";
 export default function Logout() {
   const [loading, setLoading] = useState(false);
   const handleLogout = async () => {
-    setLoading(true);
+    setLoading(true); 
     try {
       const res = await axios.post("/api/user/logout");
       localStorage.removeItem("messenger");

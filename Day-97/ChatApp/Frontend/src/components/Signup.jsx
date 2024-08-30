@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import axios from "axios";
 import { useAuth } from "../context/AuthProvider";
 import { Link } from "react-router-dom";
+import toast from "react-hot-toast";
 
 export default function Signup() {
   const [authUser, setAuthUser] = useAuth();
@@ -31,7 +32,7 @@ export default function Signup() {
       .then((response) => {
         console.log(response.data);
         if (response.data) {
-          alert("Signup successful! You can now log in.");
+          toast.success("Signup successful! You can now log in.");
         }
 
         localStorage.setItem("messenger", JSON.stringify(response.data));
@@ -39,7 +40,7 @@ export default function Signup() {
       })
       .catch((error) => {
         if (error.response) {
-          alert("Error:" + error.response.data.error);
+          toast.error("Error:" + error.response.data.error);
         }
       });
   };
@@ -174,7 +175,10 @@ export default function Signup() {
             </div>
             <p>
               Have any Account?{" "}
-              <Link to={"/login"} className="text-blue-500 underline cursor-pointer ml-1">
+              <Link
+                to={"/login"}
+                className="text-blue-500 underline cursor-pointer ml-1"
+              >
                 {" "}
                 Login
               </Link>

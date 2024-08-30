@@ -6,7 +6,7 @@ function Chatuser() {
   console.log(selectedConversation);
   const { onlineUsers } = useSocketContext();
   const getOnlineUserStatus = (userId) => {
-    return onlineUsers.includes(userId) ? "Online" : "Offline";
+    return onlineUsers.includes(userId) ? "Offline" : "Online";
   };
 
   return (
@@ -23,7 +23,8 @@ function Chatuser() {
 
         <div>
           <h1 className="text-xl">{selectedConversation.name}</h1>
-          {/* <h1 className="text-xl">Ankit</h1> */}
+          
+          
           <span className="text-sm">
             {getOnlineUserStatus(selectedConversation._id)}
           </span>
@@ -34,3 +35,4 @@ function Chatuser() {
 }
 
 export default Chatuser;
+ 

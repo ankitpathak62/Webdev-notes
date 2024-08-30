@@ -5,6 +5,7 @@ import Logout from "./home/left1/Logout";
 import Signup from "./components/Signup";
 import Login from "./components/Login";
 import { useAuth } from "./context/AuthProvider";
+import toast, { Toaster } from "react-hot-toast";
 import { Routes, Route, Navigate } from "react-router-dom";
 
 function App() {
@@ -20,9 +21,10 @@ function App() {
             authUser ? (
               <div className="flex h-screen">
                 <Logout></Logout>
-                <Left></Left>
-                <Right></Right>
+                <Left />
+                <Right />
               </div>
+              
             ) : (
               <Navigate to={"/login"} />
             )
@@ -30,13 +32,14 @@ function App() {
         />
         <Route
           path="/login"
-          element={authUser ? <Navigate to={"/"} /> : <Login />}
+          element={authUser ? <Navigate to="/" /> : <Login />}
         />
         <Route
           path="/signup"
-          element={authUser ? <Navigate to={"/"} /> : <Signup />}
+          element={authUser ? <Navigate to="/" /> : <Signup />}
         />
       </Routes>
+      <Toaster />
     </>
   );
 }

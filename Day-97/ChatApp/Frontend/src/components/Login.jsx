@@ -1,41 +1,42 @@
+import axios from "axios";
 import React from "react";
 import { useForm } from "react-hook-form";
-import axios from "axios";
 import { useAuth } from "../context/AuthProvider";
 import { Link } from "react-router-dom";
+import toast from "react-hot-toast";
 
-export default function Login() {
+
+function Login() {
   const [authUser, setAuthUser] = useAuth();
+
   const {
     register,
-    handleSubmit, 
+    handleSubmit,
     formState: { errors },
   } = useForm();
 
   const onSubmit = (data) => {
     const userInfo = {
-      
       email: data.email,
       password: data.password,
-       
     };
-    axios
+
+       axios
       .post("/api/user/login", userInfo)
       .then((response) => {
-        console.log(response.data);
         if (response.data) {
-          alert("Login successful! ");
+          toast.success("Login successful");
         }
-
         localStorage.setItem("messenger", JSON.stringify(response.data));
         setAuthUser(response.data);
       })
       .catch((error) => {
         if (error.response) {
-          alert("Error:" + error.response.data.message);
+          toast.error("Error: " + error.response.data.error);
         }
       });
   };
+       
   return (
     <>
       <div>
@@ -126,3 +127,4 @@ export default function Login() {
     </>
   );
 }
+export default Login;

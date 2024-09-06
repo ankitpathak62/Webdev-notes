@@ -2,8 +2,7 @@ import React from "react";
 
 function Loading() {
   return (
-    <>
-      <div className="flex h-screen items-center justify-center bg-slate-600">
+    <div className="flex h-screen items-center justify-center bg-slate-600">
         <div className="flex w-52 flex-col gap-4">
           <div className="flex items-center gap-4">
             <div className="skeleton h-16 w-16 shrink-0 rounded-full"></div>
@@ -15,7 +14,6 @@ function Loading() {
           <div className="skeleton h-32 w-full"></div>
         </div>
       </div>
-    </>
   );
 }
 

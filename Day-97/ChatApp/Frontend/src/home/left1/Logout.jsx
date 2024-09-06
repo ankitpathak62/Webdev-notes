@@ -4,19 +4,20 @@ import axios from "axios";
 import Cookies from "js-cookie";
 import toast from "react-hot-toast";
 
-export default function Logout() {
+function Logout() {
   const [loading, setLoading] = useState(false);
   const handleLogout = async () => {
-    setLoading(true); 
+    setLoading(true);
     try {
       const res = await axios.post("/api/user/logout");
-      localStorage.removeItem("messenger");
+      localStorage.removeItem("ChatApp");
       Cookies.remove("jwt");
       setLoading(false);
-      toast.success("Logout Successfully");
+      toast.success("Logged out successfully");
+      window.location.reload();
     } catch (error) {
-      console.log(error);
-      toast.error("Failed to Logout");
+      console.log("Error in Logout", error);
+      toast.error("Error in logging out");
     }
   };
   return (
@@ -34,3 +35,4 @@ export default function Logout() {
     </>
   );
 }
+export default Logout;
